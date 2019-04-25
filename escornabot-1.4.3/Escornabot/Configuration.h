@@ -70,7 +70,7 @@ See LICENSE.txt for details
 
 // buzzer
 #define USE_BUZZER true
-#define BUZZER_PIN 2
+#define BUZZER_PIN A0
 #define PROGRAM_FINISHED_RTTL RTTL_FIDO
 #define TONE_FREQ_UP 2637
 #define TONE_FREQ_RIGHT 4434
@@ -97,14 +97,14 @@ See LICENSE.txt for details
 #ifdef ENGINE_TYPE_STEPPERS
 
 // stepper pin setup (digital outputs)
-#define STEPPERS_MOTOR_RIGHT_IN1 6
-#define STEPPERS_MOTOR_RIGHT_IN2 5
-#define STEPPERS_MOTOR_RIGHT_IN3 4
-#define STEPPERS_MOTOR_RIGHT_IN4 3
-#define STEPPERS_MOTOR_LEFT_IN1 10
-#define STEPPERS_MOTOR_LEFT_IN2 9
-#define STEPPERS_MOTOR_LEFT_IN3 8
-#define STEPPERS_MOTOR_LEFT_IN4 7
+#define STEPPERS_MOTOR_RIGHT_IN1 5
+#define STEPPERS_MOTOR_RIGHT_IN2 4
+#define STEPPERS_MOTOR_RIGHT_IN3 3
+#define STEPPERS_MOTOR_RIGHT_IN4 2
+#define STEPPERS_MOTOR_LEFT_IN1 9
+#define STEPPERS_MOTOR_LEFT_IN2 8
+#define STEPPERS_MOTOR_LEFT_IN3 7
+#define STEPPERS_MOTOR_LEFT_IN4 6
 
 // step calibration
 #define STEPPERS_STEPS_PER_SECOND 1000
@@ -188,7 +188,7 @@ See LICENSE.txt for details
  */
 
 #define USE_MFRC522 true
-#define MFRC522_SS_PIN  A0
+#define MFRC522_SS_PIN  10
 #define MFRC522_RST_PIN A1
 
 // Identificador de tarjeta RFID de final de recorrido
