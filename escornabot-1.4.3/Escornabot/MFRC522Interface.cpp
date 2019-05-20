@@ -28,8 +28,6 @@ byte _uidForMatch[4]  = {UID1, UID2, UID3, UID4};
 
 MFRC522Interface::MFRC522Interface() {
 
-  // init SPI bus
-  SPI.begin();
   
 }
 
@@ -39,6 +37,9 @@ MFRC522Interface::~MFRC522Interface() {
 
 void MFRC522Interface::initialize() {
 
+  // init SPI bus
+  SPI.begin();
+  
   // init MFRC522
   mfrc522.PCD_Init();
   
@@ -48,6 +49,7 @@ void MFRC522Interface::finalize() {
   
   mfrc522.PICC_HaltA(); 
   mfrc522.PCD_StopCrypto1();
+  SPI.end();
   
 }
 
@@ -114,4 +116,3 @@ bool MFRC522Interface::matchingCard() {
   return false;
   
 }
-
