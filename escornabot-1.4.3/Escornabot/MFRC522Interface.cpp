@@ -28,7 +28,6 @@ byte _uidForMatch[4]  = {UID1, UID2, UID3, UID4};
 
 MFRC522Interface::MFRC522Interface() {
 
-  
 }
 
 MFRC522Interface::~MFRC522Interface() {

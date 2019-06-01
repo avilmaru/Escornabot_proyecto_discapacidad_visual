@@ -93,7 +93,7 @@ void EventManager::indicateMoveExecuted(MOVE move)
         i = i->getNext();
     }
 
-    #if (USE_MFRC522 && USE_BLUETOOTH)
+    #if (USE_MFRC522 && USE_BLUETOOTH && CHECK_RFID_CARDS_UNTIL_END_POINT)
       if (!RFID.cardDetected())
       {
         BLUETOOTH->CardNotDetected(); 

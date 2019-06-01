@@ -188,6 +188,7 @@ See LICENSE.txt for details
  */
 
 #define USE_MFRC522 true
+#define CHECK_RFID_CARDS_UNTIL_END_POINT true
 #define MFRC522_SS_PIN  10
 #define MFRC522_RST_PIN A1
 
